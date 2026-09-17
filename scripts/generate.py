@@ -40,10 +40,26 @@ def parse_frontmatter(text):
 
 def load_modules():
     result = []
+    seen_ids = set()
+    seen_names = set()
+
     for file in sorted(MODULES_DIR.glob("*.md")):
         data = parse_frontmatter(file.read_text(encoding="utf-8"))
+
+        module_id = data.get("id")
+        module_name = data.get("name")
+
+        if module_id in seen_ids:
+            raise ValueError(f"Duplicate module id: {module_id} ({file})")
+        if module_name in seen_names:
+            raise ValueError(f"Duplicate module name: {module_name} ({file})")
+
+        seen_ids.add(module_id)
+        seen_names.add(module_name)
+
         data["_file"] = str(file.relative_to(ROOT))
         result.append(data)
+
     return result
 
 def clean_cell(value):

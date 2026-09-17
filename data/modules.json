@@ -22,18 +22,6 @@
     "last_verified_date": null
   },
   {
-    "id": "adguardcert",
-    "name": "AdGuard Certificate",
-    "category": "AdBlocks / Firewalls / DNS Alternatives",
-    "status": "working",
-    "source": "https://github.com/AdguardTeam/adguardcert",
-    "origin": "XDA OP import",
-    "source_post": "90672831",
-    "source_thread": "https://xdaforums.com/t/list-of-modules-working-on-temporal-root.4796105/",
-    "last_verified_by_repo": null,
-    "last_verified_date": null
-  },
-  {
     "id": "afwall",
     "name": "AFWall+",
     "category": "AdBlocks / Firewalls / DNS Alternatives",
@@ -167,7 +155,7 @@
     "source_post": "90672831",
     "last_verified_by_repo": null,
     "last_verified_date": null,
-    "warning": "Warning, permanent hardbrick"
+    "warning": "Major problem, permanent hardbrick"
   },
   {
     "id": "kona-bess",
@@ -180,30 +168,6 @@
     "last_verified_by_repo": null,
     "last_verified_date": null,
     "warning": "Outdated"
-  },
-  {
-    "id": "konabess-next",
-    "name": "KonaBess-Next",
-    "category": "Kernel / GPU",
-    "status": "not-working",
-    "source": "https://github.com/KonaBess-Next/KonaBess-Next",
-    "origin": "XDA OP import",
-    "source_post": "90672831",
-    "source_thread": "https://xdaforums.com/t/list-of-modules-working-on-temporal-root.4796105/",
-    "last_verified_by_repo": null,
-    "last_verified_date": null
-  },
-  {
-    "id": "konabess",
-    "name": "KonaBess",
-    "category": "Kernel / GPU",
-    "status": "outdated",
-    "source": "https://github.com/libxzr/KonaBess",
-    "origin": "XDA OP import",
-    "source_post": "90672831",
-    "source_thread": "https://xdaforums.com/t/list-of-modules-working-on-temporal-root.4796105/",
-    "last_verified_by_repo": null,
-    "last_verified_date": null
   },
   {
     "id": "lsposed",
@@ -227,7 +191,7 @@
     "source_post": "90672831",
     "last_verified_by_repo": null,
     "last_verified_date": null,
-    "warning": "Warning, permanent hardbrick"
+    "warning": "Major problem, permanent hardbrick"
   },
   {
     "id": "migrate-oss",
@@ -452,30 +416,6 @@
     "source": "https://github.com/j-hc/zygisk-detach",
     "origin": "XDA OP import",
     "source_post": "90672831",
-    "last_verified_by_repo": null,
-    "last_verified_date": null
-  },
-  {
-    "id": "zygisk-lsposed",
-    "name": "LSPosed",
-    "category": "Base / Loaders / Frameworks",
-    "status": "working",
-    "source": "https://github.com/KernelSU-Modules-Repo/zygisk_lsposed",
-    "origin": "XDA OP import",
-    "source_post": "90672831",
-    "source_thread": "https://xdaforums.com/t/list-of-modules-working-on-temporal-root.4796105/",
-    "last_verified_by_repo": null,
-    "last_verified_date": null
-  },
-  {
-    "id": "zygisk-next",
-    "name": "ZygiskNext",
-    "category": "Base / Loaders / Frameworks",
-    "status": "working",
-    "source": "https://github.com/Dr-TSNG/ZygiskNext",
-    "origin": "XDA OP import",
-    "source_post": "90672831",
-    "source_thread": "https://xdaforums.com/t/list-of-modules-working-on-temporal-root.4796105/",
     "last_verified_by_repo": null,
     "last_verified_date": null
   },

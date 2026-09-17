@@ -8,11 +8,11 @@ origin: "XDA OP import"
 source_post: "90672831"
 last_verified_by_repo: null
 last_verified_date: null
-warning: "Warning, permanent hardbrick"
+warning: "Major problem, permanent hardbrick"
 ---
 
 # Magisk
 
 Imported from the XDA Developers Temporal Root testing thread.
 
-**XDA note:** Warning, permanent hardbrick
+**XDA note:** Major problem, permanent hardbrick
