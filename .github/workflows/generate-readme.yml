@@ -1,0 +1,38 @@
+name: Generate README
+
+on:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+    paths:
+      - "modules/**"
+      - "scripts/generate.py"
+      - ".github/workflows/generate-readme.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Generate README and JSON
+        run: python scripts/generate.py
+
+      - name: Commit generated files
+        uses: stefanzweifel/git-auto-commit-action@v7
+        with:
+          commit_message: "chore: generate README and module data"
+          file_pattern: README.md data/modules.json

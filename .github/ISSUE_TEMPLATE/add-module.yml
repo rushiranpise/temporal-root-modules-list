@@ -1,0 +1,16 @@
+name: Add a module
+description: Suggest a module for testing with Temporal Root
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module name
+    validations:
+      required: true
+  - type: textarea
+    id: testing
+    attributes:
+      label: Testing details
+      description: Include device, ROM, Android version, Temporal Root version, and module version.
+    validations:
+      required: true

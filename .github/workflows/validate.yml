@@ -1,0 +1,29 @@
+name: Validate Modules
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+      - master
+      - dev
+    paths:
+      - "modules/**"
+      - "scripts/**"
+      - ".github/workflows/validate.yml"
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Validate module files
+        run: python scripts/validate.py

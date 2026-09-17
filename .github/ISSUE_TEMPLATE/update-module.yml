@@ -1,0 +1,15 @@
+name: Update module result
+description: Report a new compatibility result
+body:
+  - type: input
+    id: module
+    attributes:
+      label: Module name
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Result and environment
+    validations:
+      required: true
